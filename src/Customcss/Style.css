@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ body{
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+ }
+h1{
+    font-weight: 500;
+    color:blue;
+}
+ /* QRGenerator Component Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    height: 67vh;
+    width: 100vw;
+    margin-top: 50px;
+    border: 2px solid skyblue;
+  }
+  label.labelimage{
+    margin-bottom: 6px;
+    color: #555;
+    margin-top:16px;
+  }
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  p.Footer{
+    margin-top: 58px;
+  }
+  
+  .imageofqr {
+    margin-bottom: 20px;
+  }
+  span.usererror{
+    color:red;
+  }
+  .imagephoto {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .labelinput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .labelname {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid blue;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .genQr {
+    background-color: #28a745;
+  }
+  
+  .genQr:hover {
+    background-color: #218838;
+  }
+  
+  .dowQr {
+    background-color: #ffc107;
+  }
+  
+  .dowQr:hover {
+    background-color: #e0a800;
+  }
+  /* ------------------------------------------------ mediaquaries------------------------------------------- */
+  @media screen and (max-width: 420px) {
+    div.container{
+        margin-top:150px;
+    }
+    button.genQr{
+        margin-right: 27px;
+        font-size: smaller;
+        padding: 11px;
+    }
+    button.dowQr{
+        margin-right: 27px;
+        font-size: smaller;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 11px;
+    }
+    .imagephoto {
+        width: 120px;
+        height: 120px;
+        margin-top: 25px;
+    }
+    h1 {
+        font-size: 19px;
+        margin-bottom: 0px;
+    }
+    p.Footer{
+        margin-top: 32px;
+    }
+  }
+  
